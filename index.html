@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="numeros">
+            <div id="numero1">0</div>
+        </div>
+
+        <button class="gris" onclick="porcentaje()">%</button>
+        <button class="gris" onclick="borrarTodo()">CE</button>
+        <button class="gris" onclick="borrarTodo()">C</button>
+        <button class="naranja" onclick="borrar()">DEL</button>
+
+        <button class="gris" onclick="entreUno()">1/x</button>
+        <button class="gris" onclick="cuadrado()">x²</button>
+        <button class="gris" onclick="raiz()">√x</button>
+        <button class="naranja" onclick="hola('/')">÷</button>
+
+        <button class="numero" onclick="hola(7)">7</button>
+        <button class="numero" onclick="hola(8)">8</button>
+        <button class="numero" onclick="hola(9)">9</button>
+        <button class="naranja" onclick="hola('*')">×</button>
+
+        <button class="numero" onclick="hola(4)">4</button>
+        <button class="numero" onclick="hola(5)">5</button>
+        <button class="numero" onclick="hola(6)">6</button>
+        <button class="naranja" onclick="hola('-')">-</button>
+
+        <button class="numero" onclick="hola(1)">1</button>
+        <button class="numero" onclick="hola(2)">2</button>
+        <button class="numero" onclick="hola(3)">3</button>
+        <button class="naranja" onclick="hola('+')">+</button>
+
+        <button class="numero" onclick="masMenos()">±</button>
+        <button class="numero" onclick="hola(0)">0</button>
+        <button class="numero" onclick="hola('.')">.</button>
+        <button class="azul" onclick="igualA()">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

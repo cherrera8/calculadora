@@ -1,0 +1,67 @@
+body
+{
+    margin: 0;
+    background-color: #000000;
+}
+.calculadora
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 165px);
+    grid-template-rows: repeat(7, 85px);
+    margin: 15px;
+}
+.numeros
+{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+    padding-top: 30px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    grid-column: 1 / -1;
+}
+.numeros:hover
+{
+    background-color: #222222;
+}
+#numero1
+{
+    font-size: 45px;
+    color: #ffffff;
+}
+.calculadora button
+{
+    border: 1px solid #000000;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+.calculadora button:hover
+{
+    opacity: 1;
+}
+.calculadora button:active
+{
+    opacity: 0.75;
+    transform: translateY(1px);
+}
+.azul
+{
+    background-color: #3399ff;
+}
+.gris
+{
+    background-color: #999999;
+}
+.numero
+{
+    background-color: #333333;
+}
+.naranja
+{
+    background-color: #ff9900;
+}
