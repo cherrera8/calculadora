@@ -5,6 +5,30 @@ var stored2;
 on = true;
 off = false;
 
+function teclado(tecla)
+{
+    if (!isNaN(tecla) || tecla == "." || tecla == "+" || tecla == "-" || tecla == "*" || tecla == "/")
+    {
+        hola(tecla);
+    }
+    if (tecla == "%")
+    {
+        porcentaje();
+    }
+    if (tecla == "Escape")
+    {
+        borrarTodo();
+    }
+    if (tecla == "Backspace")
+    {
+        borrar();
+    }
+    if (tecla == "Enter")
+    {
+        igualA();
+    }
+}
+
 function hola(caca)
 {
     if (document.getElementById("numero1").innerHTML == "0" && caca != "." && caca != "+" && caca != "-" && caca != "*" && caca != "/")
