@@ -1,1 +1,0 @@
-La calculadora más chingona.
