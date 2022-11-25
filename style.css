@@ -31,21 +31,22 @@ body
     color: #ffffff;
     text-align: right;
 }
-.calculadora button
+button
 {
     border: 1px solid #000000;
     font-size: 30px;
     color: #ffffff;
     opacity: 0.9;
 }
-.calculadora button:hover
+button:hover
 {
     opacity: 1;
+    transform: translateY(1px);
 }
-.calculadora button:active
+button:active
 {
     opacity: 0.75;
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 .azul
 {

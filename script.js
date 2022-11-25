@@ -8,7 +8,7 @@ function teclado(tecla)
     {
         porcentaje();
     }
-    if (tecla == "Escape")
+    if (tecla == "Escape" || tecla == "Delete")
     {
         borrarTodo();
     }
@@ -16,7 +16,7 @@ function teclado(tecla)
     {
         borrar();
     }
-    if (tecla == "Enter")
+    if (tecla == "Enter" || tecla == "=")
     {
         igualA();
     }
