@@ -1,10 +1,3 @@
-var resultado = false;
-var stored1;
-var stored2;
-
-on = true;
-off = false;
-
 function teclado(tecla)
 {
     if (!isNaN(tecla) || tecla == "." || tecla == "+" || tecla == "-" || tecla == "*" || tecla == "/")
@@ -31,9 +24,27 @@ function teclado(tecla)
 
 function hola(caca)
 {
-    if (document.getElementById("numero1").innerHTML == "0" && caca != "." && caca != "+" && caca != "-" && caca != "*" && caca != "/")
+    if (document.getElementById("numero1").innerHTML == "Syntax error")
     {
-        document.getElementById("numero1").innerHTML = caca;
+        if (caca == "." || caca == "+" || caca == "-" || caca == "*" || caca == "/")
+        {
+            document.getElementById("numero1").innerHTML = "0" + caca;
+        }
+        else
+        {
+            document.getElementById("numero1").innerHTML = caca;
+        }
+    }
+    else if (document.getElementById("numero1").innerHTML == "0")
+    {
+        if (caca == "." || caca == "+" || caca == "-" || caca == "*" || caca == "/")
+        {
+            document.getElementById("numero1").innerHTML += caca;
+        }
+        else
+        {
+            document.getElementById("numero1").innerHTML = caca;
+        }
     }
     else
     {
